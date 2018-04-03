@@ -1,0 +1,152 @@
+body{
+	background: linear-gradient(180deg, #151e26 27%, #2a2532 96%);
+	color: #FFF;
+	font-family: 'DIN 2014';
+	font-weight: 200;
+}
+
+nav{
+	padding-top: 3.2em;
+	text-align: right !important;
+}
+nav .logo{
+	float: left;
+}
+.navItem{
+	margin-left: 30px;
+
+	color: #FFF;
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+}
+
+main{
+	display: block;
+	max-width: 1280px;
+	margin: 0 auto !important;
+}
+
+.grid{
+	padding: 0 3%;
+	text-align: center;
+}
+.grid__col{
+	text-align: left;
+	padding-left: 0;
+}
+
+h2{
+	font-size: 3em;
+	font-weight: 300;
+	line-height: 1.5em;
+	letter-spacing: 0.05em;
+}
+
+h5{
+	margin: 0;
+	font-size: 1.375em;
+	font-weight: 200;
+}
+
+a{
+	width: 17em;
+	padding: 1em 0;
+
+	color: #1b1f28;
+	font-weight: 500;
+	line-height: 2em;
+	letter-spacing: 0.3em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/*Utility Classes*/
+.center{
+	text-align: center;
+}
+.floatR{
+	float: right;
+}
+
+.red{
+	background-color: #ff5555;
+}
+.blue{
+	background-color: #50e2cd;
+}
+
+.redTxt{
+	color: #ff5555;
+}
+.blueTxt{
+	color: #50e2cd;
+}
+
+/*Cards on Home Page*/
+.homeCard{
+	height: 34.6em;
+	padding: 10% 6%;
+	margin: 8em 0;
+	background-color: #1c1f28;
+	position: relative;
+	box-sizing: border-box;
+
+	font-size: 1em;
+	letter-spacing: 0.01em;
+	line-height: 2em;
+
+	box-shadow: 0 0 28px rgba(14,18,25,0.5);
+}
+
+.homeCard .cardNum{
+	display: inline-block;
+	margin: 0;
+	transform-origin: 0 90%;
+	transform: rotate(90deg) translateX(-23.3em);
+
+	font-size: 0.75em;
+	font-weight: 800;
+	line-height: 1em;
+	letter-spacing: 0.3em;
+	text-align: right;
+	text-transform: uppercase;
+}
+.homeCard .cardNum svg{
+	display: inline-block;
+}
+
+.homeCard h1{
+	text-transform: uppercase;
+	font-size: 6.25em;
+	font-weight: 800;
+	letter-spacing: 0.4em;
+
+	transform: translateX(-12%);
+}
+
+.homeCard h2{
+	margin: 0;
+
+	font-size: 1.375em;
+	font-weight: 200;
+	line-height: 2em;
+	letter-spacing: 0.01em;
+}
+
+.homeCard p{
+	max-width: 30em;
+}
+
+.homeCard a{
+	position: absolute;
+	bottom: -4.5%;
+}
+
+.homeCard .images{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	transform: translateY(-25%);
+}
