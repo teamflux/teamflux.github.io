@@ -11,9 +11,10 @@ nav{
 }
 nav .logo{
 	float: left;
+	height: 3em;
 }
 .navItem{
-	margin-left: 30px;
+	margin-left: 3em;
 
 	color: #FFF;
 	font-size: 1em;
@@ -49,6 +50,16 @@ h5{
 	font-weight: 200;
 }
 
+h6{
+	margin: 0;
+
+	font-size: 0.75em;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 2.5em; 
+	letter-spacing: 0.3em;
+}
+
 a{
 	width: 17em;
 	padding: 1em 0;
@@ -60,6 +71,12 @@ a{
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 /*Utility Classes*/
@@ -149,4 +166,47 @@ a{
 	top: 50%;
 	right: 20%;
 	transform: translateY(-25%);
+}
+
+#moreAboutTeam{
+	margin-top: 8em;
+}
+#moreAboutTeam a{
+	transform: translateY(-25%);
+}
+
+footer{
+	padding: 0;
+	margin-top: 8em;
+	margin-bottom: 4em;
+}
+
+.footerItem{
+	display: inline-block;
+	width: 40%;
+}
+.footerItem li{
+	color: #b3b3b3;
+	font-weight: 200;
+	line-height: 2em;
+	letter-spacing: 0.01em;
+	text-align: left;
+	text-transform: initial;
+}
+.footerItem a>li{
+	color: #FFF;
+}
+.footerItem a>li:hover{
+	text-decoration: underline;
+}
+.footerItem:nth-child(3){
+	width: 18%;
+	float: right;
+
+	font-weight: 500;
+	text-align: right;
+}
+.copyright{
+	font-size: 1.4em;
+	font-weight: 400;
 }
