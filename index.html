@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/toastGrid/css/grid.css">
 	<link rel="stylesheet" type="text/css" href="css/baseStyles.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/navBar.js"></script>
+	<script src="js/includes.js"></script>
 </head>
 <body>
 	<main class="grid">
@@ -29,7 +29,11 @@
 			<h1>Play</h1>
 			<p>Users are now asked to jump, run and dodge when they want to complete an action on their phone. We are not saying get off your phone, we're just saying let's be more active while using it.</p>
 			<a href="" class="red">Get the app</a>
-			<div class="images"></div>
+			<div class="images">
+				<div class="imgBubble red" style="width: 85%; height: 85%; left: -14%; top: -27%"><img src=""></div>
+				<div class="imgBubble lightRed" style="width: 35%; height: 35%; right: -18%; top: 31%;"><img src=""></div>
+				<div class="imgBubble blue" style="width: 52%; height: 52%; right: 17%; bottom: -25%;"><img src=""></div>
+			</div>
 		</div>
 		<div class="homeCard grid__col grid__col--7-of-8">
 			<h3 class="cardNum redTxt">02 achieve<br>
@@ -42,7 +46,11 @@
 			<h1>Achieve</h1>
 			<p>Users are now asked to jump, run and dodge when they want to complete an action on their phone. We are not saying get off your phone, we're just saying let's be more active while using it.</p>
 			<a href="about.html" class="blue">View More</a>
-			<div class="images"></div>
+			<div class="images">
+				<img src="assets/phone-png.png" style="left: 26%; top: 29%">
+				<div class="imgBubble gray" style="width: 45%; height: 45%; left: -26%; top: -23%;"></div>
+				<div class="imgBubble gray" style="width: 35%; height: 35%; right: 15%; bottom: -18%;"></div>
+			</div>
 		</div>
 		<div class="homeCard grid__col grid__col--7-of-8">
 			<h3 class="cardNum blueTxt">03 learn<br>
@@ -55,31 +63,20 @@
 			<h1>Learn</h1>
 			<p>Users are now asked to jump, run and dodge when they want to complete an action on their phone. We are not saying get off your phone, we're just saying let's be more active while using it.</p>
 			<a href="about.html" class="red">View More</a>
-			<div class="images"></div>
+			<div class="images">
+				<div class="imgBubble lightRed" style="width: 47%; height: 47%; left: -3%; top: -24%; z-index: -1;"></div>
+				<div class="imgBubble blue" style="width: 35%; height: 35%; right: -18%; top: 31%;"><img src=""></div>
+			</div>
 		</div>
 		<div id="moreAboutTeam" class="grid__col grid__col--6-of-8">
 			<a href="team.html" class="blue floatR">Meet the Team</a>
 			<h5>Learn more about Team Flux with our process and motivations.</h5>
 		</div>
-	<footer class="grid__col grid__col--6-of-8">
-		<ul class="footerItem">
-			<h6>Additional Links</h6>
-			<a href="https://fluxteamproject.tumblr.com/"><li>Tumblr</li></a>
-			<a href="https://github.com/mcs2515/Flux"><li>Github</li></a>
-			<a href=""><li>Process Deck</li></a>
-		</ul>
-		<ul class="footerItem">
-			<h6>Special Thanks</h6>
-			<li>Adam Smith</li>
-			<li>Sten McKinzie</li>
-			<li>Imagine RIT</li>
-		</ul>
-		<h6 class="footerItem"><span class="copyright">&copy;</span> Team FLUX 2018</h6>
-	</footer>
 	</main>
 		<div class="imgBubble"><img src=""></div>
 	<script type="text/javascript">
 		addNavBar();
+		addFooter();
 	</script>
 </body>
 </html>

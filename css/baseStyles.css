@@ -11,7 +11,6 @@ nav{
 }
 nav .logo{
 	float: left;
-	height: 3em;
 }
 .navItem{
 	margin-left: 3em;
@@ -79,6 +78,11 @@ ul{
 	list-style-type: none;
 }
 
+.imgBubble{
+	border-radius: 50%;
+	position: absolute;
+}
+
 /*Utility Classes*/
 .center{
 	text-align: center;
@@ -90,8 +94,15 @@ ul{
 .red{
 	background-color: #ff5555;
 }
+.lightRed{
+	background-color: #f99180;
+}
 .blue{
 	background-color: #50e2cd;
+}
+.gray{
+	background-color: #252f35;
+	z-index: -1;
 }
 
 .redTxt{
@@ -105,7 +116,7 @@ ul{
 .homeCard{
 	height: 34.6em;
 	padding: 10% 6%;
-	margin: 8em 0;
+	margin: 9em 0;
 	background-color: #1c1f28;
 	position: relative;
 	box-sizing: border-box;
@@ -162,10 +173,15 @@ ul{
 }
 
 .homeCard .images{
+	width: 50%;
+	height: 100%;
+
 	position: absolute;
-	top: 50%;
-	right: 20%;
-	transform: translateY(-25%);
+	top: 0;
+	right: 0;
+}
+.homeCard .images img{
+	position: absolute;
 }
 
 #moreAboutTeam{
