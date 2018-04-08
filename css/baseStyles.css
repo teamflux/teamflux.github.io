@@ -1,18 +1,22 @@
 body{
-	background: linear-gradient(180deg, #151e26 27%, #2a2532 96%);
+	background: linear-gradient(180deg, #151e26 31%, #2a2532 96%);
+	margin: 0;
 	color: #FFF;
 	font-family: 'DIN 2014';
 	font-weight: 200;
 }
 
 nav{
-	padding-top: 3.2em;
+	padding-top: 2.8em;
 	text-align: right !important;
 }
 nav .logo{
 	float: left;
+	margin-left: 0;
 }
 .navItem{
+	display: inline-block;
+	width: auto;
 	margin-left: 3em;
 
 	color: #FFF;
@@ -112,6 +116,26 @@ ul{
 	color: #50e2cd;
 }
 
+.headerBG{
+	width: 100%;
+	z-index: -2;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.headerBG img{
+	width: 100%;
+	z-index: -3;
+}
+
+#trailer{
+	z-index: 2;
+	box-shadow: 0 0 50px 5px rgba(14,18,25,0.5);
+
+	position: relative;
+	margin-bottom: 11.5em;
+}
+
 /*Cards on Home Page*/
 .homeCard{
 	height: 34.6em;
@@ -125,7 +149,7 @@ ul{
 	letter-spacing: 0.01em;
 	line-height: 2em;
 
-	box-shadow: 0 0 28px rgba(14,18,25,0.5);
+	box-shadow: 0 0 50px rgba(14,18,25,0.65);
 }
 
 .homeCard .cardNum{
@@ -165,6 +189,7 @@ ul{
 
 .homeCard p{
 	max-width: 30em;
+	width: 70%;
 }
 
 .homeCard a{
