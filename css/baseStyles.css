@@ -85,6 +85,12 @@ ul{
 .imgBubble{
 	border-radius: 50%;
 	position: absolute;
+	overflow: hidden;
+}
+.imgBubble video{
+	width: 100%;
+	position: absolute;
+	top: 0;
 }
 
 /*Utility Classes*/
