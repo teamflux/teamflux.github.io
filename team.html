@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLUX Team Project</title>
+	<link rel="stylesheet" type="text/css" href="css/toastGrid/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="css/baseStyles.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/includes.js"></script>
+</head>
+<body>
+	<main class="grid">
+		<section id="meetFLUX" class="grid__col grid__col--7-of-8">
+			<img src="assets/team/Group_2.jpg" class="teamPhoto grid__col grid__col--7-of-8 shadow">
+			<h1 id="meet">Meet</h1>
+			<h1 id="flux">FLUX</h1>
+		</section>
+		<section id="team">
+			<div class="grid__col grid__col--2-of-8">
+			</div>
+			<div class="grid__col grid__col--2-of-8">
+			</div>
+		<script type="text/javascript">
+				var names = ["Riley Yankowich", "Solomon Mercurio", "Jack Kaiser", "Amy Pham", "Melissa Hochadel", "Megan Smith", "Riki Mistry"];
+				var roles = ["Designer", "Designer", "Designer", "Designer/Developer", "Designer", "Developer", "Industrial Designer"];
+				var pLinks = ["http://rileyank.com/", "http://solomonm.com/", "http://jackkaiser.me/", "http://ampp.me", "Melissa Hochadel", "https://people.rit.edu/~mcs2515/portfolio/", "Riki Mistry"];
+
+				for(var i = 0; i < names.length; i++){
+					var firstName = names[i].split(' ')[0];
+					var htmlString = '<a href="'+pLinks[i]+'" target="_blank" class="member shadow">'+
+							'<img src="assets/team/FLUX_'+firstName.toLowerCase()+'.jpg" class="headshot">'+
+							'<h3 class="name rotate cardNum">'+names[i]+'</h3>'+
+							'<div class="hoverState">'+
+								'<div>'+
+									'<h3 class="role">'+roles[i]+'</h3>'+
+									'<h2 class="workLink">Visit '+firstName+'\'s<br>Portfolio</h2>'+
+								'</div>'+
+							'</div>'+
+						'</a>';
+					if(i % 2 == 0){
+						$('#team > .grid__col').eq(0).append(htmlString);
+						$('#team > .grid__col:first').find('.hoverState:last').addClass('red');
+					}
+					else{
+						$('#team > .grid__col').eq(1).append(htmlString);
+						$('.hoverState:last').addClass('blue');
+					}
+				}
+			$('#team > .grid__col:last').append('<div class="member imagineInfo">'+
+				'<h4>Come meet the team at Imagine RIT.</h4>'+
+				'<strong>April 28th, 2018</strong><br>'+
+				'10 AM &ndash; 5 PM<br>'+
+				'Webb Auditorium Lobby'+
+			'</div>');
+			</script>
+		
+		</section>
+	</main>
+	<script type="text/javascript">
+		addNavBar();
+		addFooter();
+	</script>
+</body>
+</html>

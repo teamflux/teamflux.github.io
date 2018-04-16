@@ -40,11 +40,27 @@ main{
 	padding-left: 0;
 }
 
+h1{
+	text-transform: uppercase;
+	font-size: 6.25em;
+	font-weight: 800;
+	letter-spacing: 0.4em;
+}
+
 h2{
 	font-size: 3em;
 	font-weight: 300;
 	line-height: 1.5em;
 	letter-spacing: 0.05em;
+}
+
+h3{
+	margin: 0;
+	font-size: 0.75em;
+	font-weight: 800;
+	line-height: 1em;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
 }
 
 h5{
@@ -115,6 +131,10 @@ ul{
 	z-index: -1;
 }
 
+.shadow{
+	box-shadow: 0 0 50px rgba(14,18,25,1);
+}
+
 .redTxt{
 	color: #ff5555;
 }
@@ -142,6 +162,11 @@ ul{
 	margin-bottom: 11.5em;
 }
 
+.rotate{
+	transform-origin: 0 90%;
+	transform: rotate(90deg);
+}
+
 /*Cards on Home Page*/
 .homeCard{
 	height: 34.6em;
@@ -161,26 +186,14 @@ ul{
 .homeCard .cardNum{
 	display: inline-block;
 	margin: 0;
-	transform-origin: 0 90%;
-	transform: rotate(90deg) translateX(-23.3em);
-
-	font-size: 0.75em;
-	font-weight: 800;
-	line-height: 1em;
-	letter-spacing: 0.3em;
 	text-align: right;
-	text-transform: uppercase;
+	transform: rotate(90deg) translateX(-23.3em);
 }
 .homeCard .cardNum svg{
 	display: inline-block;
 }
 
 .homeCard h1{
-	text-transform: uppercase;
-	font-size: 6.25em;
-	font-weight: 800;
-	letter-spacing: 0.4em;
-
 	transform: translateX(-12%);
 }
 
@@ -256,4 +269,111 @@ footer{
 .copyright{
 	font-size: 1.4em;
 	font-weight: 400;
+}
+
+/*Team Page*/
+#meetFLUX{
+	position: relative;
+	margin-top: 8em;
+	margin-bottom: 3.3em;
+}
+.teamPhoto{
+	width: 100%;
+}
+#meetFLUX h1{
+	position: absolute;
+}
+#meetFLUX #meet{
+	bottom: -0.7em;
+	left: -3%;
+}
+#meetFLUX #flux{
+	bottom: -2.3em;
+	left: 58%;
+}
+
+.member{
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	color: #FFF;
+	overflow: hidden;
+	padding: 0;
+	margin: 4.1em 0;
+}
+#team>.grid__col{
+	vertical-align: top;
+	margin: 0 5%;
+}
+#team>.grid__col:nth-child(even){
+	transform: translateY(14em);
+}
+
+.member .name{
+	display: inline-block;
+	position: absolute;
+	top: 1em;
+	left: 1.5em;
+}
+.member .workLink{
+	max-width: 10em;
+	margin: 0 auto;
+	margin-top: 0.8em;
+
+	color: #151e26;
+	font-size: 1.375em;
+	font-weight: 500;
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+	text-transform: initial;
+}
+.member .headshot{
+	display: block;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -2;
+}
+.member .hoverState{
+	margin: 0;
+	border-radius: 20em;
+	width: 200%;
+	height: 150%;
+
+	position: absolute;
+	top: -25%;
+	left: -50%;
+	overflow: hidden;
+
+	transform-origin: center;
+	transform: scale(0);
+	transition: 0.3s ease-in-out;
+}
+
+.hoverState div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+
+	transition: 0.2s ease-in-out 0.15s;
+}
+
+.member:hover .hoverState{
+
+	transform: scale(1);
+}
+.member:hover .hoverState div{
+	opacity: 1;
+}
+
+.imagineInfo{
+	font-size: 1.375em;
+	font-weight: 200;
+	line-height: 1.5em;
+	letter-spacing: 0.15em;
+}
+.imagineInfo h4{
+	margin: 0;
+	margin-bottom: 5em;
 }
