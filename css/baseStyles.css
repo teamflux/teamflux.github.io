@@ -224,8 +224,41 @@ ul{
 	top: 0;
 	right: 0;
 }
-.homeCard .images img{
-	position: absolute;
+
+.healthCards{
+    width: 100%;
+}
+.mainCard{
+    width: 54% !important;
+    position: relative;
+}
+.mainCard .cardAnim{
+    width: auto;
+
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+}
+.healthCards .card{
+    width: 40%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -50%);
+}
+
+.healthCards .card:nth-child(1){
+	transform: translate(-86%, -48%) rotate(-17deg);
+}
+.healthCards .card:nth-child(2){
+	transform: translate(-14%, -48%) rotate(17deg);
+}
+.card img{
+	display: block;
+    width: 100%;
 }
 
 #moreAboutTeam{
@@ -368,12 +401,18 @@ footer{
 }
 
 .imagineInfo{
-	font-size: 1.375em;
+	font-size: 1em;
 	font-weight: 200;
-	line-height: 1.5em;
+	line-height: 2.3em;
 	letter-spacing: 0.15em;
 }
 .imagineInfo h4{
+	font-size: 1.375em;
+	line-height: 1.5em;
 	margin: 0;
-	margin-bottom: 5em;
+	margin-bottom: 4.5em;
+	margin-top: -0.3em;
+}
+.imagineInfo strong{
+	font-weight: 600;
 }
