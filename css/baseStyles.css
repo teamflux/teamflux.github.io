@@ -2,7 +2,7 @@ body{
 	background: linear-gradient(180deg, #151e26 31%, #2a2532 96%);
 	margin: 0;
 	color: #FFF;
-	font-family: 'DIN 2014';
+	font-family: 'din-2014';
 	font-weight: 200;
 }
 
@@ -322,7 +322,7 @@ footer{
 }
 #meetFLUX #flux{
 	bottom: -2.3em;
-	left: 58%;
+	left: 56%;
 }
 
 .member{
