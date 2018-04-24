@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="scoreboardStyles.css">
+	<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var scoresRed;
+		var scoresBlue;
+		setInterval(function() {
+		  // method to be executed;
+		    $.ajax({
+				url: "http://serenity.ist.rit.edu/~amp4129/341/flux/scores.php",
+		  		type: "POST",
+		  		dataType: "json",
+				success: function(data){
+					console.log('getting data');
+					updateScores(data);
+				},
+				error: function(xhr, status, error) {
+				    console.dir(status + "\n" + error);
+				}
+			});
+		}, 2000);
+
+		function updateScores(scores){
+			scoresRed = scores[0];
+			scoresBlue = scores[1];
+			var bigString = "";
+			var totalRed = 0;
+			var totalBlue = 0;
+
+			for(var i = 0; i < scoresRed.length; i++){
+				totalRed += parseInt(scoresRed[i]);
+				bigString += '<p class="score">' + scoresRed[i] + '</p>';
+			}
+			$('.red > .scores').html(bigString);
+			$('.red > .teamTotal').text(totalRed);
+
+			bigString = "";
+			for(var i = 0; i < scoresBlue.length; i++){
+				totalBlue += parseInt(scoresBlue[i]);
+				bigString += '<p class="score">' + scoresBlue[i] + '</p>';
+			}
+			$('.blue > .scores').html(bigString);
+			$('.blue > .teamTotal').text(totalBlue);
+		}
+
+	</script>
+	<main>
+		<header>
+			<h1>Scoreboard</h1>
+		</header>
+		<div class="board">
+			<div class="team red">
+				<h2 class="teamTitle selected">Team Red</h2>
+				<h3 class="teamTotal selected">514:39</h3>
+				<div class="scores">
+					<p class="score">0:56</p>
+					<p class="score">0:56</p>
+					<p class="score">0:56</p>
+					<p class="score">0:56</p>
+				</div>
+			</div>
+			<div class="team blue">
+				<h2 class="teamTitle">Team Blue</h2>
+				<h3 class="teamTotal selected">514:39</h3>
+				<div class="scores">
+					<p class="score">1:03</p>
+					<p class="score">1:03</p>
+					<p class="score">1:03</p>
+					<p class="score">1:03</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

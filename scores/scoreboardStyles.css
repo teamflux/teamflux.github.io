@@ -1,0 +1,58 @@
+body{
+	background-color: #000;
+	
+	font-family: 'DIN 2014';
+	color: #FFF;
+	text-align: center;
+}
+
+h1{
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+.team{
+	display: inline-block;
+	width: 40%;
+	vertical-align: top;
+}
+
+.teamTitle{
+	font-weight: 200;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+.red .teamTitle{
+	color: #ff5f57;
+}
+
+.blue .teamTitle{
+	color: #5ae2e2;
+}
+
+.red .selected{
+	text-shadow: 0 0 15px #ff5f57;
+}
+
+.blue .selected{
+	text-shadow: 0 0 15px #5ae2e2;
+}
+
+.teamTotal{
+	font-weight: 600;
+	font-size: 4em;
+}
+
+.score{
+	font-weight: 200;
+	font-size: 2em;
+}
+
+.red .teamTotal{
+	color: #ff5f57;
+}
+.blue .teamTotal{
+	color: #5ae2e2;
+}

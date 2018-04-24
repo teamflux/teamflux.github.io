@@ -1,16 +1,11 @@
+
 body{
 	margin: 0;
 	color: #FFF;
 	font-family: 'din-2014';
 	font-weight: 200;
 	overflow-x: hidden;
-}
-
-.bgGradient{
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(180deg, #151e26 10%, #2a2532 90%);
-	z-index: -5;	
+	background: linear-gradient(180deg, #151e26 45%, #2a2532 97%);
 }
 
 nav{
@@ -33,7 +28,7 @@ nav .logo{
 }
 
 main{
-	display: block;
+	height: 100%;
 	max-width: 1280px;
 	margin: 0 auto !important;
 }
@@ -105,6 +100,13 @@ ul{
 	list-style-type: none;
 }
 
+.bgGradient{
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: -5;	
+}
+
 .imgBubble{
 	border-radius: 50%;
 	position: absolute;
@@ -159,6 +161,9 @@ ul{
 }
 .blueTxt{
 	color: #50e2cd;
+}
+
+#header{
 }
 
 .headerBG{
@@ -244,6 +249,26 @@ ul{
 	right: 0;
 }
 
+.results_phone{
+	position: relative;
+	text-align: center;
+}
+
+.results_phone video{
+	display: inline-block;
+	width: 83%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.results_phone img{
+	display: block;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+
 .healthCards{
     width: 100%;
 }
@@ -252,7 +277,7 @@ ul{
     position: relative;
 }
 .mainCard .cardAnim{
-    width: auto;
+    width: 72%;
 
     position: absolute;
     left: 50%;
@@ -321,6 +346,32 @@ footer{
 .copyright{
 	font-size: 1.4em;
 	font-weight: 400;
+}
+
+/*About Page*/
+.aboutSection{
+	margin: 4.4em 0;
+	position: relative;
+}
+
+.aboutSection h1{
+	margin-bottom: 0.2em;
+}
+
+.aboutSection h2{
+	margin-top: 0.4em;
+	margin-bottom: 0.8em;
+}
+
+.aboutSection p{
+	width: 52%;
+	margin: 0;
+	margin-bottom: 2.2em;
+
+	font-weight: 100;
+	font-size: 1.375em;
+	line-height: 1.8em;
+	letter-spacing: 0.01em;
 }
 
 /*Team Page*/
