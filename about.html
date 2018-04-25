@@ -28,22 +28,79 @@
 			</div>
 			<div class="gridDotsB" style="width: 25em; height: 25em; right: -14em; top: -17em;"></div>
 		</div>
-		<div class="grid__col grid__col--7-of-8 aboutSection">
+		<div class="grid__col grid__col--7-of-8 aboutSection" style="margin-bottom: 32em">
 			<h3 class="cardNum redTxt">02 Help</h3>
 			<h2>How does this help?</h2>
 			<p>Through FLUX, you’re one step closer to an improved wellbeing. Physically activity is directly linked to many long term positive effects. As you play you’ll achieve informational cards which showcase your physical progress.</p>
 			<p>Share cards with friends and unlock new cards the farther you get in the game!</p>
+			<div class="cardInteraction">
+				<div class="cardWrapper">
+	                <div class="card">
+	                    <img src="assets/mainCard.png">
+	                    <img src="assets/heart-gif.gif" class="cardAnim">
+	                </div>
+				</div>
+                <div class="cardWrapper">
+	                <div class="card">
+	                    <img src="assets/mainCard.png">
+	                    <img src="assets/heart-gif.gif" class="cardAnim">
+	                </div>
+                </div>
+                <div class="cardWrapper">
+	                <div class="card">
+	                    <img src="assets/mainCard.png">
+	                    <img src="assets/heart-gif.gif" class="cardAnim">
+	                </div>
+                </div>
+                <div class="cardWrapper">
+	                <div class="card">
+	                    <img src="assets/mainCard.png">
+	                    <img src="assets/heart-gif.gif" class="cardAnim">
+	                </div>
+                </div>
+                <div class="cardWrapper">
+	                <div class="card">
+	                    <img src="assets/mainCard.png">
+	                    <img src="assets/heart-gif.gif" class="cardAnim">
+	                </div>
+                </div>
+			</div>
+			<script type="text/javascript">
+				var cardIncrement = 10;
+				var numCards = 5;
+				var cardOffset = 50+(parseInt(numCards/2)*cardIncrement);
+				$('.cardWrapper').each(function(){
+					$(this).css('left', (cardOffset+'%'));
+					cardOffset -= cardIncrement;
+				});
+
+				$('.cardWrapper').hover(function(){
+					$(this).addClass('selected');
+					//document.querySelector('.cardWrapper.selected').querySelector('cardAnim').play();
+				}, function(){
+					$(this).removeClass('selected');
+				});
+			</script>
 		</div>
 		<div class="grid__col grid__col--7-of-8 aboutSection">
 			<h3 class="cardNum redTxt">03 Handles</h3>
 			<h2>Paired with Custom Handles.</h2>
 			<p>For an improved experience, we’ve created a custom handset out of ____ material. Inspired by real workout equipment, the handset familiarizes users with handles that are reflected in other wellness gear and workout tools.</p>
-			<video autoplay loop><source src="" type="video/mp4"></video> 
+			<br>
+			<div class="sketchfab-embed-wrapper"><iframe src="https://sketchfab.com/models/14224069ac1e43b18bde8188940a8679/embed?autostart=1&amp;camera=0" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> </div>
 		</div>
 		<div class="grid__col grid__col--7-of-8 aboutSection">
 			<h3 class="cardNum redTxt">04 Results</h3>
 			<h2>Get Results.</h2>
 			<p>Once the game is over, not only will the user be able to see their in game progress but they will also be able to see their active minutes in comparison to their goals.</p>
+			<p>Track your progress to reach your full potential.</p>
+
+			<div class="results_phone" style="width: 45em; position: absolute; left: 60%; top: 50%; transform: translateY(-50%);">
+				<video class="resultsVid" autoplay loop>
+					<source src="assets/results_screen.mp4" type="video/mp4">
+				</video>
+				<img src="assets/phone-vector.png">
+			</div>
 		</div>
 		<div class="grid__col grid__col--7-of-8 aboutSection">
 			<h3 class="cardNum redTxt">05 Summary</h3>
