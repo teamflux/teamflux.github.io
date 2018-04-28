@@ -6,21 +6,31 @@
 	<link rel="stylesheet" type="text/css" href="css/baseStyles.css">
 	<link rel="stylesheet" href="https://use.typekit.net/wzx5hfc.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+	<script src="js/jquery.paroller.js"></script>
 	<script src="js/includes.js"></script>
 </head>
 <body>
+	<script type="text/javascript">
+		//setup all the scroll magics
+		var controller = new ScrollMagic.controller();
+		$('.my-paroller').paroller();
+	</script>
+
+
 	<main class="grid">
 		<section id="header">
-			<img src="assets/fluxLogo.svg" class="grid__col grid__col--1-of-8" style="margin-top: 10.6em"><br>
 			<h2 class="introText grid__col grid__col--5-of-8 center">Who says playing games on your phone can't get you moving?</h2>
 			<div class="headerBG">
 				<div style="position: absolute; width: 100%; height: 100%; box-shadow: inset 0 -313px 218px -131px #151e26;"></div>
 				<img src="assets/BG-Website.jpg">
 			</div>
-			<img src="assets/videoPreview.png" id="trailer">
+			<div style="padding:49.25% 0 0 0;position:relative;" id="trailer" class="grid__col grid__col--7-of-8"><iframe src="https://player.vimeo.com/video/266894490?color=ff5f57&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 		</section>
 		<div class="bgGradient"><br></div>
 		<div class="homeCard grid__col grid__col--7-of-8">
+			<div class="cardBG"> </div>
 			<h3 class="cardNum rotate blueTxt" style="transform: rotate(90deg) translateX(-45.5em);">01 play<br>
 			<svg xmlns="http://www.w3.org/2000/svg" width="524" height="4" viewBox="0 0 524 4">
 				<style type="text/css">  
@@ -42,7 +52,7 @@
 				<div class="imgBubble lightRed" style="width: 35%; padding-top: 35%; right: -18%; top: 31%;">
 					<video autoplay loop><source src="assets/bubbles/Play-Turn.mp4" type="video/mp4"></video>
 					</div>
-				<div class="imgBubble blue" style="width: 52%; padding-top: 52%; right: 17%; bottom: -25%;">
+				<div class="imgBubble blue" style="width: 52%; padding-top: 52%; right: 17%; bottom: -5%;">
 					<video autoplay loop><source src="assets/bubbles/Play-Jump.mp4" type="video/mp4"></video>
 					</div>
 			</div>
@@ -50,6 +60,7 @@
 			<div class="gridDotsS" style="width: 16em; height: 16em; left: -14em; top: 15em;"></div>
 		</div>
 		<div class="homeCard grid__col grid__col--7-of-8">
+			<div class="cardBG"> </div>
 			<h3 class="cardNum rotate redTxt">02 achieve<br>
 				<svg xmlns="http://www.w3.org/2000/svg" width="258" height="4" viewBox="0 0 257.5 4">
 				<line class="st0" y1="2" x2="254" y2="2"/>
@@ -61,19 +72,20 @@
 			<p>Keep track of how long you've been moving with each game session and work your way up to your daily target time. Then push yourself to go for more.</p>
 			<a href="about.html#results" class="blue">View More</a>
 			<div class="images">
-				<div class="results_phone" style="width: 34em; position: absolute; left: 26%; top: 53%; transform: translateY(-50%);">
+				<div class="results_phone" style="width: 34em; position: absolute; left: 26%; top: 41%; transform: translateY(-50%);">
 					<video class="resultsVid" autoplay loop>
 						<source src="assets/results_screen.mp4" type="video/mp4">
 					</video>
 					<img src="assets/phone-vector.png">
 				</div>
 				<div class="imgBubble gray shadow" style="width: 45%; padding-top: 45%; left: -26%; top: -23%;"></div>
-				<div class="imgBubble gray" style="width: 35%; padding-top: 35%; right: 15%; bottom: -18%;"></div>
+				<div class="imgBubble gray shadow" style="width: 35%; padding-top: 35%; right: 15%; bottom: -18%;"></div>
 			</div>
 			<div class="gridDotsB" style="width: 25em; height: 25em; left: -13em; top: -6.5em;"></div>
 			<div class="gridDotsS" style="width: 16em; height: 16em; right: -14em; top: 15em;"></div>
 		</div>
 		<div class="homeCard grid__col grid__col--7-of-8">
+			<div class="cardBG"> </div>
 			<h3 class="cardNum rotate blueTxt">03 learn<br>
 				<svg xmlns="http://www.w3.org/2000/svg" width="258" height="4" viewBox="0 0 257.5 4">
 				<line class="st0" y1="2" x2="254" y2="2"/>
@@ -85,8 +97,8 @@
 			<p>Getting in shape really does have benefits. Discover how FLUX improves your daily self with FLUX facts. Spread the word by sharing these digital cards to friends and family!</p>
 			<a href="about.html#benefits" class="red">View More</a>
 			<div class="images">
-				<div class="imgBubble lightRed" style="width: 47%; padding-top: 47%; left: -3%; top: -24%; z-index: -1;"></div>
-				<div class="imgBubble blue" style="width: 35%; padding-top: 35%; right: -18%; top: 31%;"></div>
+				<div class="imgBubble lightRed" style="width: 47%; padding-top: 47%; left: -3%; top: 2%; z-index: -1;"></div>
+				<div class="imgBubble blue" style="width: 35%; padding-top: 35%; right: -18%; top: 48%;"></div>
                 <div class="healthCards">
                     <img src="assets/card1.png" class="card">
                     <img src="assets/card2.png" class="card">
@@ -106,6 +118,57 @@
 	</main>
 		<div class="imgBubble"><img src=""></div>
 	<script type="text/javascript">
+
+		 $(".homeCard, [data-paroller-factor]").paroller({
+	            factor: 0.1,            // multiplier for scrolling speed and offset
+	            type: 'foreground',     // background, foreground
+	        });
+
+		 $(".cardNum, [data-paroller-factor]").paroller({
+	            factor: 0.06,
+	            type: 'foreground',
+	        });
+		 $(".homeCard h1, [data-paroller-factor]").paroller({
+	            factor: 0.1,
+	            type: 'foreground',
+	        });
+		 $(".homeCard a, [data-paroller-factor]").paroller({
+	            factor: 0.06,
+	            type: 'foreground',
+	        });
+
+		 $(".gridDotsB, [data-paroller-factor]").paroller({
+	            factor: -0.2,
+	            type: 'foreground',
+	        });
+		 $(".gridDotsS, [data-paroller-factor]").paroller({
+	            factor: -0.1,
+	            type: 'foreground',
+	        });
+		 $(".imgBubble.red, [data-paroller-factor]").paroller({
+	            factor: 0.1,
+	            type: 'foreground',
+	        });
+		 $(".imgBubble.lightRed, [data-paroller-factor]").paroller({
+	            factor: 0.15,
+	            type: 'foreground',
+	            direction: 'vertical'
+	        });
+		 $(".imgBubble.blue, [data-paroller-factor]").paroller({
+	            factor: 0.4,
+	            type: 'foreground',
+	        });
+
+		 $(".results_phone, [data-paroller-factor]").paroller({
+	            factor: 0.3,
+	            type: 'foreground',
+	        });
+		 $(".healthCards, [data-paroller-factor]").paroller({
+	            factor: 0.25,
+	            type: 'foreground',
+	        });
+
+
 		addNavBar();
 		addFooter();
 	</script>

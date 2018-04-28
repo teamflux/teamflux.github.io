@@ -51,7 +51,7 @@ h1{
 
 h2{
 	font-size: 3em;
-	font-weight: 300;
+	font-weight: 200;
 	line-height: 1.5em;
 	letter-spacing: 0.05em;
 }
@@ -111,6 +111,8 @@ ul{
 	border-radius: 50%;
 	position: absolute;
 	overflow: hidden;
+
+	transition: 0.5s ease-in-out;
 }
 .imgBubble video{
 	width: 100%;
@@ -149,11 +151,11 @@ ul{
 }
 .gray{
 	background-color: #252f35;
-	z-index: -1;
+	z-index: -3;
 }
 
 .shadow{
-	box-shadow: 0 0 50px rgba(14,18,25,1);
+	box-shadow: 0 0 50px rgba(14,18,25,0.8);
 }
 
 .redTxt{
@@ -164,6 +166,12 @@ ul{
 }
 
 #header{
+}
+
+#header h2{
+	text-align: left;
+	margin-top: 2.5em;
+	margin-bottom: 1.1em;
 }
 
 .headerBG{
@@ -183,7 +191,6 @@ ul{
 	box-shadow: 0 0 50px 5px rgba(14,18,25,0.5);
 
 	position: relative;
-	margin-bottom: 11.5em;
 }
 
 .rotate{
@@ -196,14 +203,23 @@ ul{
 	height: 34.6em;
 	padding: 10% 6%;
 	margin: 9em 0;
-	background-color: #1c1f28;
 	position: relative;
 	box-sizing: border-box;
 
 	font-size: 1em;
 	letter-spacing: 0.01em;
 	line-height: 2em;
+}
 
+.homeCard .cardBG{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+
+	background-color: #1c1f28;
 	box-shadow: 0 0 50px rgba(14,18,25,0.65);
 }
 
@@ -271,6 +287,8 @@ ul{
 
 .healthCards{
     width: 100%;
+    position: absolute;
+    top: 58%;
 }
 .mainCard{
     width: 54% !important;
@@ -368,6 +386,7 @@ footer{
 	margin: 0;
 	margin-bottom: 2.2em;
 
+	color: #CCC;
 	font-weight: 100;
 	font-size: 1.375em;
 	line-height: 1.8em;
@@ -397,6 +416,18 @@ footer{
 .sketchfab-embed-wrapper iframe{
 	width: 100%;
 	height: 30em;
+}
+
+.summaryImg{
+	width: 48%;
+	margin-bottom: 2em;
+}
+.summaryImg:nth-child(odd){
+	margin-right: 4%;
+}
+
+tspan{
+	font-family: 'din-2014';
 }
 
 /*Team Page*/
