@@ -5,7 +5,7 @@ body{
 	font-family: 'din-2014';
 	font-weight: 200;
 	overflow-x: hidden;
-	background: linear-gradient(180deg, #151e26 45%, #2a2532 97%);
+	background: linear-gradient(180deg, #151e26 60%, #2a2532 97%);
 }
 
 nav{
@@ -295,7 +295,7 @@ ul{
     position: relative;
 }
 .card .cardAnim{
-    width: 72%;
+    width: 60%;
 
     position: absolute;
     left: 50%;
