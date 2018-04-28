@@ -92,6 +92,16 @@ a{
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+	transition: 0.2s ease-in-out;
+}
+
+a.red:hover{
+	background-color: #50e2cd;
+	transition: 0.2s ease-in-out;
+}
+a.blue:hover{
+	background-color: #ff5555;
+	transition: 0.2s ease-in-out;
 }
 
 ul{

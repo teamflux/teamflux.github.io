@@ -13,8 +13,6 @@
 </head>
 <body>
 	<script type="text/javascript">
-		//setup all the scroll magics
-		var controller = new ScrollMagic.controller();
 		$('.my-paroller').paroller();
 	</script>
 
@@ -44,7 +42,17 @@
 			<h2>Redefining touchscreen gestures.</h2>
 			<h1>Play</h1>
 			<p>We're not telling you to get off your phone, but you can be more active while using it. Use your real life body to jump, run, and dodge to control your in game self.</p>
-			<a href="" class="red">Get the app</a>
+			<a href="javascript:;" class="red appButton">Get the app</a>
+			<script type="text/javascript">
+				$('.appButton').hover(function(){
+						$(this).text("Coming Soon!");
+					},function(){
+						$(this).text("Get the app");
+				});
+				$('.appButton').click(function(){
+						return;
+				});
+			</script>
 			<div class="images">
 				<div class="imgBubble red" style="width: 85%; padding-top: 85%; left: -14%; top: -27%">
 					<video autoplay loop><source src="assets/bubbles/Play-Run.mp4" type="video/mp4"></video>
