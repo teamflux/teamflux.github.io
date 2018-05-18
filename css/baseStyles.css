@@ -275,20 +275,21 @@ ul{
 	right: 0;
 }
 
-.results_phone{
+.phone_video{
 	position: relative;
 	text-align: center;
 }
 
-.results_phone video{
+.phone_video video{
 	display: inline-block;
 	width: 83%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: -1;
 }
-.results_phone img{
+.phone_video img{
 	display: block;
 	width: 100%;
 	position: relative;

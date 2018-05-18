@@ -34,7 +34,7 @@
 			<h2>How does this help?</h2>
 			<p>Through FLUX, you’re one step closer to an improved wellbeing. Physical activity is directly linked to many long term positive effects. As you play you’ll earn informational cards which showcase your physical progress.</p>
 			<p>Share cards with friends and unlock new cards the farther you get in the game!</p>
-			<div class="results_phone" style="width: 34em; position: absolute; left: 60%; top: 42%; transform: translateY(-50%);">
+			<div class="phone_video" style="width: 34em; position: absolute; left: 60%; top: 42%; transform: translateY(-50%);">
 				<video class="resultsVid" autoplay loop>
 					<source src="assets/cards_screen.mp4" type="video/mp4">
 				</video>
@@ -97,7 +97,7 @@
 			<p>Once the game is over, not only will the user be able to see their in game progress but they will also be able to see their active minutes in comparison to their goals.</p>
 			<p>Track your progress to reach your full potential.</p>
 
-			<div class="results_phone" style="width: 34em; position: absolute; left: 60%; top: 50%; transform: translateY(-50%);">
+			<div class="phone_video" style="width: 34em; position: absolute; left: 60%; top: 50%; transform: translateY(-50%);">
 				<video class="resultsVid" autoplay loop>
 					<source src="assets/results_screen.mp4" type="video/mp4">
 				</video>
@@ -113,9 +113,16 @@
 				var fileName = "";
 				for(var fileNum = 1; fileNum < 5; fileNum++){
 					fileName = "assets/breakdown/screen-" + fileNum + ".png";
-					$('.breakdown').append('<img src="' + fileName + '" class="summaryImg">')
+					$('.breakdown').append('<img src="' + fileName + '" class="summaryImg shadow">')
 				}
 			</script>
+		</div>
+		<div class="grid__col grid__col--7-of-8 aboutSection">
+			<h3 class="cardNum redTxt">06 Future</h3>
+			<h2>Where are we headed?</h2>
+			<p>Today our platform is mobile devices, but the future is headed towards Augmented Reality.</p>
+			<p>FLUX is ready to take on new technology</p>
+			<video autoplay loop style="width: 36em;  position: absolute; left: 55%; top: 50%; " class="arVid shadow"><source src="assets/Flux-AR-Render_1.mp4" type="video/mp4"></video>
 		</div>
 	</main>
 	<script type="text/javascript">
@@ -142,7 +149,12 @@
 	            type: 'foreground',
 	        });
 
-		 $(".results_phone, [data-paroller-factor]").paroller({
+		 $(".phone_video, [data-paroller-factor]").paroller({
+	            factor: 0.3,
+	            type: 'foreground',
+	        });
+
+		 $(".arVid, [data-paroller-factor]").paroller({
 	            factor: 0.3,
 	            type: 'foreground',
 	        });
