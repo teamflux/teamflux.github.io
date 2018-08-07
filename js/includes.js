@@ -25,7 +25,7 @@ function addFooter(){
 			'<h6>Additional Links</h6>'+
 			'<a href="https://fluxteamproject.tumblr.com/" target="_blank"><li>Tumblr</li></a>'+
 			'<a href="https://github.com/mcs2515/Flux" target="_blank"><li>Github</li></a>'+
-			'<a href="" target="_blank"><li>Process Deck</li></a>'+
+			'<a href="https://teamflux.github.io/FLUX_ProcessDeck.pdf" target="_blank"><li>Process Deck</li></a>'+
 		'</ul>'+
 		'<ul class="footerItem">'+
 			'<h6>Special Thanks</h6>'+
